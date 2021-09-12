@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<title>Diagnostic Care First</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Urbanist:wght@600&display=swap" rel="stylesheet">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#features" class="w3-button w3-block">Features</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block">About</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <img src="./images/Logo-1.jpg" style="width:30%">
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="./images/Pic-1.jpg" style="width:100%">
+      
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="./images/Pic-2.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Vaccination Services</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="./images/Blood-Test-1024x667-1.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Laboratory Services</span>
+      </div>
+    </div>
+    <br><br>
+    <p>Diagnostic Care First is one of Patna's leading laboratories with more than 20 years of experience in providing accurate results throughout. 
+      Diagnostic Care First, with the help of its skilled specialists, aims at providing accurate results to customers, now even at their doorsteps.
+      The staff at this establishment is courteous and prompt at providing any assistance. The belief that customer satisfaction is as important as their services has helped this laboratory garner a vast base of customers, which continues to grow by the day.</p>
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+  <!-- Grid -->
+
+  <div id="about">
+    <div class="w3-row-padding">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-red w3-padding-16">What We Offer</span>
+    </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card-4">
+          <img src="./images/ECG.jpg" alt="Mike" style="width:100%;" class="image">
+          <div class="w3-container w3-center">
+            <h3 style="font-family: 'Urbanist', sans-serif; font-size: 1.4rem;line-height: 3.5rem;">ECG</h3>
+          </div>
+        </div>
+      </div>
+    <div class="w3-quarter w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="./images/Pathology Lab.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container w3-center">
+          <h3 style="font-family: 'Urbanist', sans-serif; font-size: 1.4rem;line-height: 3.5rem;">Pathology Lab</h3>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-quarter w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="./images/Bio-Chemistry.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container w3-center">
+          <h3 style="font-family: 'Urbanist', sans-serif; font-size: 1.4rem;line-height: 3.5rem;">Bio-Chemistry</h3>
+        </div>
+      </div>
+    </div>
+  <div class="w3-quarter w3-margin-bottom">
+    <div class="w3-card-4">
+      <img src="./images/TMT.jpg" alt="Jane" style="width:100%">
+      <div class="w3-container w3-center"> 
+        <h3 style="font-family: 'Urbanist', sans-serif; font-size: 1.4rem;line-height: 3.5rem;">Treadmill (TMT)</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w3-row-padding">
+<div class="w3-quarter w3-margin-bottom">
+    <div class="w3-card-4">
+      <img src="./images/Pulmonary (Lung).jpg" alt="Jane" style="width:100%">
+      <div class="w3-container w3-center">
+        <h3 style="font-family: 'Urbanist', sans-serif; font-size: 1.2rem;line-height: 3.5rem;">Pulmonary Function Test</h3>
+      </div>
+    </div>
+  </div>
+  <div class="w3-quarter w3-margin-bottom">
+    <div class="w3-card-4">
+      <img src="./images/HOLTER.jpg" alt="Jane" style="width:100%">
+      <div class="w3-container w3-center">
+        <h3 style="font-family: 'Urbanist', sans-serif; font-size: 1.4rem; line-height: 3.5rem;">Holter Monitor Test</h3>
+      </div>
+    </div>
+  </div>
+  <div class="w3-quarter w3-margin-bottom">
+    <div class="w3-card-4">
+      <img src="./images/Adult Vaccination.jpg" alt="Jane" style="width:100%">
+      <div class="w3-container w3-center">
+        <h3 style="font-family: 'Urbanist', sans-serif; font-size: 1.4rem; line-height: 3.5rem;">Adult Vaccination</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="features">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-red w3-padding-16">Special Features</span>
+    </div>
+  <div class="w3-row">
+  <div class="w3-half w3-left-align">
+        <ul class="w3-ul w3-hoverable">
+            <li><i class="material-icons" style="color: green;">check</i>&nbsp;&nbsp;Accuracy of test reports</li>
+            <li><i class="material-icons" style="color: green;">check</i>&nbsp;&nbsp;Sample collection service</li>
+            <li><i class="material-icons" style="color: green;">check</i>&nbsp;&nbsp;Use of vacutainers for drawing blood</li>
+          </ul>
+  </div>
+  <div class="w3-half w3-left-align">
+    <ul class="w3-ul w3-hoverable">
+        <li><i class="material-icons" style="color: green;">check</i>&nbsp;&nbsp;Skilled Phlebotomist</li>
+        <li><i class="material-icons" style="color: green;">check</i>&nbsp;&nbsp;Perfect diagnostic evaluation</li>
+        <li><i class="material-icons" style="color: green;">check</i>&nbsp;&nbsp;Customized package for PSU, Corporate  
+            Houses, Insurance Companies,Baking sector  
+            etc.</li>
+            
+      </ul>  
+    
+        
+  </div>
+</div>
+  
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-red w3-padding-16">Contact Us</span>
+  </div>
+
+  <p><b>Email : </b>gandhipatna@yahoo.com <br>
+    <b>Contact : </b>9693207299, 09334410033<br>
+    <b>Address : </b>F-4,Navyug’s Siddhi Vinayak Plaza, R. K. Bhattacharya 
+    Road, Patna-800 001, (India)<br>
+    
+    <b>Check us out at : </b>www.diagnosticcarefirst.com
+    <br><br><br>
+    </p>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-center w3-padding-48">
+        <img src="./images/Logo-1.jpg" style="width: 30%;">
+</footer>
+
+
+</body>
+</html>
